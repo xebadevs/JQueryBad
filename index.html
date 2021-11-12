@@ -8,27 +8,95 @@
     <title>JQuery Bad</title>
 </head>
 <body>
-    <section class="general-container">
+    <section class="general-container" id="general-container">
         <div class="section-main">
             <nav>
-                <div class="logo">HeisenChemistry</div>
+                <div class="cont-logo">
+                    <h1 class="logo">
+                        HeisenChemistry
+                    </h1>
+                </div>
                 <div class="cont-sections">
-                    <div class="nav-about-us"></div>
-                    <div class="nav-products"></div>
-                    <div class="nav-privacy"></div>
-                    <div class="nav-contact"></div>
+                    <a href="section-aboutus">about us</a>
+                    <a href="section-products">products</a>
+                    <a href="section-privacy">privacy</a>
+                    <a href="section-contact">contact</a>
                 </div>
             </nav>
-            <h1>HOW CAN I HELP YOU?</h1>
+            <span>HOW CAN I HELP YOU?</span>
         </section>
 
-    <section class="section-about-us"></section>
+    <section class="section-aboutus" id="section-aboutus">
+        <h2>about us</h2>
+        <div class="aboutus-left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, nisi? Id blanditiis rerum temporibus accusantium eligendi voluptates beatae dicta ea hic ipsam. Veniam voluptates a natus alias debitis sit autem reiciendis esse possimus aut molestiae magnam, consequatur quisquam quos minus?</p>
+        </div>
+        <div class="aboutus-right">
+            <div class="video"></div>
+            <div class="gallery">
+                <div><img src="#" alt=""></div>
+                <div><img src="#" alt=""></div>
+                <div><img src="#" alt=""></div>
+            </div>
+        </div>
+    </section>
 
-    <section class="section-products"></section>
+    <section class="section-products" id="section-products">
+        <h2>products</h2>
+        <div class="products-left">
+            <h3>Blue Sky</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quam consequatur adipisci nulla doloremque ipsum mollitia aspernatur repudiandae. Provident, delectus?</p>
+            <div class="gallery-left">
+                <div><img src="#" alt=""></div>
+                <div><img src="#" alt=""></div>
+                <div><img src="#" alt=""></div>
+            </div>
+        </div>
+        <div class="products-right">
+            <h3>Blue Vanish</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quam consequatur adipisci nulla doloremque ipsum mollitia aspernatur repudiandae. Provident, delectus?</p>
+            <div class="gallery-right">
+                <div>
+                    <img src="#" alt="">
+                </div>
+                <div>
+                    <img src="#" alt="">
+                </div>
+                <div>
+                    <img src="#" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section class="section-privacy"></section>
+    <section class="section-privacy" id="section-privacy">
+        <div class="privacy-left">
+            <div>
+                <img src="#" alt="">
+            </div>
+        </div>
+        <div class="privacy-right">
+            <h4></h4>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+    </section>
 
-    <section class="section-contact"></section>
+    <section class="section-contact" id="section-contact">
+        <div class="contact-left">
+            <form action="">
+                <label for="alias">Alias</label>
+                <input type="text" name="alias">
+                <label for="number">Number</label>
+                <input type="text" name="number">
+                <button>send</button>
+            </form>
+        </div>
+        <div class="contact-right">
+            <img src="#" alt="">
+        </div>
+    </section>
     </div>
 
     <script src="./js/jquery.js"></script>

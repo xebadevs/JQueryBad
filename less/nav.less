@@ -1,4 +1,63 @@
 nav {
-    background-color: red;
-    height: 8vh;
+    background-color: #032202;
+    height: 10vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border: 2px solid blue;
+}
+
+.cont-logo {
+    display: inline-flex;
+}
+
+.chElement {
+    max-width: 80px;
+    max-height: 80px;
+    margin: auto;
+    border: 1px solid white;
+    background-color: blue;
+}
+
+.titleText {
+    color: white;
+    font-size: 2.5rem;
+    margin: auto;
+    padding: 0 0.2rem 0 0.2rem;
+}
+
+.titleTop, .titleBottom {
+    width: 80px;
+    height: 15px;
+    color: white;
+    font-size: 0.8rem;
+    padding: 0 0 0.3rem 0.1rem;
+}
+
+.titleCenter {
+    width: 80px;
+    height: 50px;
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.titleTop {
+    text-align: right;
+    padding: 0.1rem 0.3rem 0 0;
+
+}
+
+.nav-buttons {
+    width: 45vw;
+    border: 1px solid yellow;
+    margin: auto;
+    grid-column: 8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-buttons button {
+    padding: 0px 30px;
 }

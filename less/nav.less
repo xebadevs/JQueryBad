@@ -1,52 +1,60 @@
 nav {
-    background-color: #032202;
+    background: linear-gradient(76deg, @walterBlack 0%, @smokyBlack 100%);
     height: 10vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    border: 2px solid blue;
 }
 
 .cont-logo {
     display: inline-flex;
+    grid-column: 4;
 }
 
-.chElement {
+.chElement, .chElementTwo {
     max-width: 80px;
     max-height: 80px;
     margin: auto;
     border: 1px solid white;
-    background-color: blue;
+    background: @elementBackgroundOne;
+}
+
+.chElementTwo {
+    background: @elementBackgroundTwo;
 }
 
 .titleText {
-    color: white;
-    font-size: 2.5rem;
+    color: @walterWhite;
+    font-size: 1rem;
     margin: auto;
     padding: 0 0.2rem 0 0.2rem;
 }
 
-.titleTop, .titleBottom {
+.elementTop, .elementBottom {
     width: 80px;
     height: 15px;
-    color: white;
     font-size: 0.8rem;
     padding: 0 0 0.3rem 0.1rem;
+    color: @walterWhite;
 }
 
-.titleCenter {
+.elementCenter {
     width: 80px;
     height: 50px;
-    color: white;
     font-size: 2.8rem;
     text-align: center;
     padding-bottom: 0.5rem;
+    color: @walterWhite;
 }
 
-.titleTop {
+.elementTop {
     text-align: right;
     padding: 0.1rem 0.3rem 0 0;
+    height: 10px;
+}
 
+.titleText {
+    font-size: 2rem;
 }
 
 .nav-buttons {

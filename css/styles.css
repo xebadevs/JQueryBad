@@ -4,48 +4,56 @@
   box-sizing: border-box;
 }
 nav {
-  background-color: #032202;
+  background: linear-gradient(76deg, #000002 0%, #032202 100%);
   height: 10vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  border: 2px solid blue;
 }
 .cont-logo {
   display: inline-flex;
+  grid-column: 4;
 }
-.chElement {
+.chElement,
+.chElementTwo {
   max-width: 80px;
   max-height: 80px;
   margin: auto;
   border: 1px solid white;
-  background-color: blue;
+  background: linear-gradient(135deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
+}
+.chElementTwo {
+  background: linear-gradient(315deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
 }
 .titleText {
-  color: white;
-  font-size: 2.5rem;
+  color: #e8edf0;
+  font-size: 1rem;
   margin: auto;
   padding: 0 0.2rem 0 0.2rem;
 }
-.titleTop,
-.titleBottom {
+.elementTop,
+.elementBottom {
   width: 80px;
   height: 15px;
-  color: white;
   font-size: 0.8rem;
   padding: 0 0 0.3rem 0.1rem;
+  color: #e8edf0;
 }
-.titleCenter {
+.elementCenter {
   width: 80px;
   height: 50px;
-  color: white;
   font-size: 2.8rem;
   text-align: center;
   padding-bottom: 0.5rem;
+  color: #e8edf0;
 }
-.titleTop {
+.elementTop {
   text-align: right;
   padding: 0.1rem 0.3rem 0 0;
+  height: 10px;
+}
+.titleText {
+  font-size: 2rem;
 }
 .nav-buttons {
   width: 45vw;

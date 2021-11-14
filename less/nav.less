@@ -59,7 +59,6 @@ nav {
 
 .nav-buttons {
     width: 45vw;
-    border: 1px solid yellow;
     margin: auto;
     grid-column: 8;
     display: flex;
@@ -67,5 +66,24 @@ nav {
 }
 
 .nav-buttons button {
-    padding: 0px 30px;
+    padding: 10px 30px;
+    background-color: transparent;
+    text-decoration: none;
+    color: @seaGreen;
+    border: 1px solid @traditionalForestGreen;
+    cursor: pointer;
+}
+
+.nav-buttons button:hover {
+    background-color: @seaGreen;
+    color: @darkGreen;
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.main-question {
+    font-size: 3em;
+    position: relative;
+    top: 40%;
+    left: 12%;
 }

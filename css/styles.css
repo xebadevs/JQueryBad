@@ -57,14 +57,30 @@ nav {
 }
 .nav-buttons {
   width: 45vw;
-  border: 1px solid yellow;
   margin: auto;
   grid-column: 8;
   display: flex;
   justify-content: space-around;
 }
 .nav-buttons button {
-  padding: 0px 30px;
+  padding: 10px 30px;
+  background-color: transparent;
+  text-decoration: none;
+  color: #369457;
+  border: 1px solid #0d3e10;
+  cursor: pointer;
+}
+.nav-buttons button:hover {
+  background-color: #369457;
+  color: #093009;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.main-question {
+  font-size: 3em;
+  position: relative;
+  top: 40%;
+  left: 12%;
 }
 .section-aboutus {
   background-image: url(../img/hexagons.svg);

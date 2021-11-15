@@ -19,8 +19,9 @@ nav {
   max-width: 80px;
   max-height: 80px;
   margin: auto;
-  border: 1px solid #e8edf0;
+  border: 1px solid #369457;
   background: linear-gradient(135deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
+  box-shadow: 3px 3px 5px #000002;
 }
 .chElementTwo {
   background: linear-gradient(315deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
@@ -28,10 +29,13 @@ nav {
 .titleText {
   color: #e8edf0;
   color: #369457;
-  font-size: 1rem;
+  font-size: 2rem;
   margin: auto;
   padding: 0 0.2rem 0 0.2rem;
   display: block;
+}
+.textCenter {
+  text-shadow: 1px 1px 2px #000002;
 }
 .elementTop,
 .elementBottom {
@@ -54,9 +58,6 @@ nav {
   padding: 0.1rem 0.3rem 0 0;
   height: 10px;
 }
-.titleText {
-  font-size: 2rem;
-}
 .nav-buttons {
   width: 45vw;
   margin: auto;
@@ -71,6 +72,7 @@ nav {
   color: #369457;
   border: 1px solid #0d3e10;
   cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .nav-buttons button:hover {
   background-color: #369457;

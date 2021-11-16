@@ -18,28 +18,62 @@
     display: inline-flex;
 }
 
+.section-title .chElementTwo {
+    margin-left: 10px;
+}
+
 .hr {
     width: 70%;
     margin: auto;
     border: 1px solid @walterWhite;
 }
 
+hr {
+    width: 60%;
+    margin: 1vh auto 5vh;
+}
+
 .post-title {
-    height: 85vh;
+    height: 79vh;
     display: grid;
-    grid-template-columns: repeat(5, 10fr);
+    grid-template-columns: 1fr 1fr;
 }
 
 .aboutus-left {
     grid-column: 1;
+    grid-row: auto;
+    color: @walterWhite;
+    border: 1px solid blue;
+    margin: auto;
 }
 
-
-.section-title .chElementTwo {
-    margin-left: 10px;
+.aboutus-left p {
+    padding: 0 10%;
 }
 
-hr {
-    width: 60%;
-    margin: 1vh auto;
+.aboutus-right {
+    border: 1px solid red;
+}
+
+.video {
+    width: 40vw;
+    height: 30vh;
+    border: 1px solid yellow;
+    margin: auto;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 50%;
+    // justify-content: space-evenly;
+}
+
+.gallery div {
+    width: 250px;
+    height: 250px;
+    border: 1px solid yellow;
+    grid-row: 3;
+    margin: auto;
 }

@@ -50,7 +50,7 @@ nav {
   height: 50px;
   font-size: 2.8rem;
   text-align: center;
-  padding-bottom: 0.5rem;
+  line-height: 3.2rem;
   color: #e8edf0;
 }
 .elementTop {
@@ -182,12 +182,6 @@ form {
   margin: auto;
   text-align: center;
 }
-.section-main {
-  background-image: url(../img/main_bg.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
 .section-privacy {
   background-image: url(../img/hexagons2.svg);
   background-size: cover;
@@ -267,4 +261,47 @@ form {
   border: 1px solid blue;
   margin: auto;
   align-items: flex-end;
+  flex-wrap: wrap;
+}
+.section-main {
+  background-image: url(../img/main_bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+@font-face {
+  font-family: 'Genos';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/genos/v1/SlGNmQqPqpUOYTYjacb0Hc91fTwVqkjorQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v8/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA71rCosg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/saira/v8/memWYa2wxmKQyPMrZX79wwYZQMhsyuShhKMjjbU9uXuA773Fosg.ttf) format('truetype');
+}
+.titleText {
+  font-family: 'Lora', serif;
+}
+.chElement,
+.chElementTwo,
+.chElementThree {
+  font-family: 'Lora', serif;
+}
+.main-question {
+  font-family: 'Saira', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
 }

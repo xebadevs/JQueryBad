@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Genos&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 @title-font: 'Lora', serif;
 @main-question: 'Saira', sans-serif;
+@text-font: 'Open Sans', sans-serif;
+@products-title: 'Righteous', cursive;
 
 .titleText {
     font-family: @title-font;
@@ -16,4 +20,25 @@
     font-family: @main-question;
     font-weight: bold;
     font-size: 4rem;
+}
+
+.nav-buttons button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.post-title p {
+    color: @walterWhite;
+    font-family: @text-font;
+    font-size: 2rem;
+}
+
+.section-products h3 {
+    font-family: @products-title;
+    color: @walterBlue;
+    text-shadow: 2px 2px 3px @walterBlack;
+    font-size: 2.5rem;
+}
+
+.section-products p {
+    color: @walterBlack;
 }

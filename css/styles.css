@@ -169,17 +169,17 @@ label {
   color: #e8edf0;
 }
 .section-contact .title-cont {
-  width: 50%;
+  width: 60%;
 }
 .left-hr {
-  width: 50%;
+  width: 60%;
 }
 .contact-form {
-  width: 50%;
+  width: 60%;
   border: 1px solid blue;
 }
 form {
-  width: 80%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   margin: auto;

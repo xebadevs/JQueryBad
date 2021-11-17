@@ -7,7 +7,7 @@
 
 .hr-blue {
     width: 60%;
-    margin: 1vh auto;
+    margin: 1vh auto 5vh;
     border: 1px solid skyblue;
 }
 
@@ -22,4 +22,34 @@
 
 .textCenterProducts {
     color: blue;
+}
+
+.section-products .post-title {
+    height: 79vh;
+}
+
+.post-title h3 {
+    text-align: center;
+}
+
+.post-title p {
+    text-align: center;
+    padding: 0 20%;
+}
+
+.gallery-left, .gallery-right {
+    display: grid;
+    grid-column: 1;
+    grid-row: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: 100%;
+}
+
+.gallery-left div, .gallery-right div {
+    width: 210px;
+    height: 210px;
+    border: 1px solid blue;
+    margin: auto;
+    align-items: flex-end;
 }

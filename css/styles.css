@@ -217,6 +217,7 @@ input[type="text"] {
   border: 2px solid #1f6032;
   padding: 0px 5px;
   text-align: center;
+  box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
 }
 input[type="text"]:focus {
   outline: 2px solid;
@@ -240,11 +241,13 @@ textarea {
   background-color: #000002;
   color: #369457;
   border: 2px solid #1f6032;
+  box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
 }
 textarea:focus {
   outline: 2px solid;
   outline-color: #369457;
   padding: 5px 5px;
+  font-size: 1.3rem;
 }
 .contact-form button {
   width: 100px;
@@ -254,6 +257,7 @@ textarea:focus {
   color: #369457;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
 }
 .contact-form button:focus,
 .contact-form button:hover {
@@ -264,6 +268,12 @@ textarea:focus {
   color: #093009;
   font-weight: bold;
   transition: 0.75s;
+}
+.section-main {
+  background-image: url(../img/main_bg.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 .section-privacy {
   background-image: url(../img/hexagons2.svg);
@@ -288,11 +298,11 @@ textarea:focus {
   box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
 }
 .post-title .privacy-right {
+  margin-top: 60px;
   width: 100%;
-  height: 79vh;
+  height: 59vh;
   display: flex;
   flex-direction: column;
-  margin: auto;
 }
 .post-title .privacy-right div {
   margin: auto;
@@ -300,11 +310,13 @@ textarea:focus {
 .post-title .privacy-right p {
   color: #e8edf0;
   text-align: center;
+  margin: auto;
 }
 .post-title .privacy-right p:nth-child(1),
 .post-title .privacy-right p:nth-child(5),
 .post-title .privacy-right p:nth-child(9) {
   color: #369457;
+  font-weight: bold;
 }
 .post-title .privacy-right .small-letter {
   font-size: 1.5rem;
@@ -389,12 +401,6 @@ textarea:focus {
   height: 206px;
   object-fit: cover;
   border-radius: 7px;
-}
-.section-main {
-  background-image: url(../img/main_bg.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
 }
 @font-face {
   font-family: 'Genos';

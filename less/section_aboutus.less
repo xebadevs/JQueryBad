@@ -25,12 +25,14 @@
 .hr {
     width: 70%;
     margin: auto;
-    border: 1px solid @walterWhite;
 }
 
 hr {
     width: 60%;
     margin: 1vh auto 5vh;
+    border: 1px solid @seaGreen;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5),
+    5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .section-aboutus .post-title {
@@ -43,7 +45,6 @@ hr {
     grid-column: 1;
     grid-row: auto;
     color: @walterWhite;
-    border: 1px solid blue;
     margin: auto;
     padding-top: 30px;
     height: 79vh;
@@ -55,15 +56,14 @@ hr {
     text-align: center;
 }
 
-.aboutus-right {
-    border: 1px solid red;
-}
-
 .video {
     width: 40vw;
     height: 30vh;
-    border: 1px solid @yellowBad;
+    border: 2px solid @seaGreen;
+    border-radius: 10px;
     margin: 40px auto 0 auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
+    5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .gallery {
@@ -76,13 +76,17 @@ hr {
 .gallery div {
     width: 210px;
     height: 210px;
-    border: 1px solid @yellowBad;
+    border: 2px solid @seaGreen;
+    border-radius: 10px;
     grid-row: 3;
     margin: auto;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
+    5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .gallery div img {
-    width: 208px;
-    height: 208px;
+    width: 206px;
+    height: 206px;
     object-fit: cover;
+    border-radius: 7px;
 }

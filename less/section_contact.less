@@ -56,6 +56,7 @@ input[type="text"] {
     color: @seaGreen;
     border: 2px solid @mughalGreen;
     padding: 0px 5px;
+    text-align: center;
 }
 
 input[type="text"]:focus {
@@ -103,16 +104,13 @@ textarea:focus {
     cursor: pointer;
 }
 
-.contact-form button:focus {
-    outline: 1px solid;
-    outline-color: @seaGreen;
-    transition: 0.5s;
-}
-
+.contact-form button:focus,
 .contact-form button:hover {
-    background-color: @yellowBad;
-    color: @darkGreen;
-    outline: 1px solid;
+    outline: 2px solid;
     outline-color: @walterBlack;
+    transition: 0.5s;
+    background-color: @seaGreen;
+    color: @darkGreen;
+    font-weight: bold;
     transition: 0.75s;
 }

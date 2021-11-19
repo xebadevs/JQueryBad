@@ -6,6 +6,11 @@
     border: 1px solid seagreen;
 }
 
+.section-products hr {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
 .hr-blue {
     width: 60%;
     margin: 1vh auto 5vh;
@@ -16,13 +21,16 @@
     display: inline-flex;
 }
 
-.chElementThree {
-    background: @elementBackgroundThree;
-    border: 1px solid @walterBlue;
-}
-
 .textCenterProducts {
     color: @walterBlue;
+}
+
+.chElementThree {
+background: @elementBackgroundThree;
+}
+
+.chElementThree .elementCenter {
+    text-shadow: 2px 2px 3px @walterBlack;
 }
 
 .section-products .post-title {
@@ -53,12 +61,16 @@
 .gallery-left div, .gallery-right div {
     width: 210px;
     height: 210px;
-    border: 1px solid @walterBlue;
+    border: 2px solid @walterBlue;
+    border-radius: 10px;
     margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
+    5px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
 .gallery-left div img, .gallery-right div img {
-    width: 208px;
-    height: 208px;
+    width: 206px;
+    height: 206px;
     object-fit: cover;
+    border-radius: 7px;
 }

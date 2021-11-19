@@ -75,7 +75,7 @@ nav {
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 .nav-buttons button:hover {
-  background-color: #369457;
+  background-color: #fdd41a;
   color: #093009;
   transform: scale(1.1);
   transition: 0.5s;
@@ -132,6 +132,7 @@ hr {
 .aboutus-left p {
   padding: 0 10%;
   line-height: 50px;
+  text-align: center;
 }
 .aboutus-right {
   border: 1px solid red;
@@ -139,7 +140,7 @@ hr {
 .video {
   width: 40vw;
   height: 30vh;
-  border: 1px solid yellow;
+  border: 1px solid #fdd41a;
   margin: auto;
 }
 .gallery {
@@ -151,7 +152,7 @@ hr {
 .gallery div {
   width: 210px;
   height: 210px;
-  border: 1px solid yellow;
+  border: 1px solid #fdd41a;
   grid-row: 3;
   margin: auto;
 }
@@ -172,6 +173,11 @@ hr {
 }
 label {
   color: #e8edf0;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5px;
+}
+label:nth-child(1) {
+  margin-top: 20px;
 }
 .section-contact .title-cont {
   width: 60%;
@@ -181,14 +187,65 @@ label {
 }
 .contact-form {
   width: 60%;
-  border: 1px solid blue;
+}
+.contact-left {
+  border: 2px solid #369457;
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  background-color: linear-gradient(315deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
 }
 form {
-  width: 50%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   margin: auto;
   text-align: center;
+}
+input[type="text"] {
+  background-color: #000002;
+  border-radius: 10px;
+  height: 30px;
+  margin: 5px 0 10px 0;
+  color: #369457;
+  border: 1px solid #369457;
+  padding: 0px 5px;
+}
+input[type="text"]:focus {
+  outline: 1px solid;
+  outline-color: #fdd41a;
+}
+.number-1 {
+  width: 10%;
+}
+.number-2 {
+  width: 20%;
+}
+.number-3 {
+  width: 50%;
+}
+textarea {
+  border-radius: 10px;
+  background-color: #000002;
+  color: #369457;
+  border: 1px solid #369457;
+}
+textarea:focus {
+  outline: 1px solid;
+  outline-color: #fdd41a;
+  padding: 5px 5px;
+}
+.contact-form button {
+  width: 100px;
+  height: 30px;
+  background-color: #000002;
+  margin: 20px auto;
+  color: #369457;
+  border-radius: 10px;
+}
+.contact-form button:focus {
+  outline: 1px solid;
+  outline-color: #fdd41a;
 }
 .section-main {
   background-image: url(../img/main_bg.jpg);
@@ -219,6 +276,7 @@ form {
 }
 .post-title .privacy-right {
   border: 1px solid pink;
+  width: 100%;
   height: 79vh;
   display: flex;
   flex-direction: column;
@@ -230,6 +288,9 @@ form {
 .post-title .privacy-right p {
   color: #e8edf0;
   text-align: center;
+}
+.post-title .privacy-right p:nth-child(1) {
+  text-decoration: underline;
 }
 .post-title .privacy-right .small-letter {
   font-size: 1.5rem;
@@ -256,11 +317,11 @@ form {
   display: inline-flex;
 }
 .chElementThree {
-  background: linear-gradient(315deg, #16125e 0%, #3131a7 35%, #08b5d7 100%);
-  border: 1px solid skyblue;
+  background: linear-gradient(315deg, #191381 0%, #5959c9 35%, #08b5d7 100%);
+  border: 1px solid #4f7ad1;
 }
 .textCenterProducts {
-  color: blue;
+  color: #4f7ad1;
 }
 .section-products .post-title {
   height: 79vh;
@@ -268,6 +329,7 @@ form {
 .section-products .post-title h3 {
   text-align: center;
   margin-bottom: 50px;
+  text-decoration: underline;
 }
 .section-products .post-title p {
   text-align: center;
@@ -286,7 +348,7 @@ form {
 .gallery-right div {
   width: 210px;
   height: 210px;
-  border: 1px solid blue;
+  border: 1px solid #4f7ad1;
   margin: auto;
   align-items: flex-end;
   flex-wrap: wrap;

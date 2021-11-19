@@ -30,22 +30,21 @@ label:nth-child(1) {
 
 .contact-form {
     width: 60%;
-    // border: 1px solid darkblue;
 }
 
 .contact-left {
-    border: 2px solid @seaGreen;
+    border: 2px solid @mughalGreen;
     width: 60%;
     margin: auto;
     border-radius: 10px;
-    background-color: @elementBackgroundTwo;
+    background-image: url(../img/hexagons3.svg);
 }
 
 form {
     width: 80%;
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: auto auto;
     text-align: center;
 }
 
@@ -55,13 +54,18 @@ input[type="text"] {
     height: 30px;
     margin: 5px 0 10px 0;
     color: @seaGreen;
-    border: 1px solid @seaGreen;
+    border: 2px solid @mughalGreen;
     padding: 0px 5px;
 }
 
 input[type="text"]:focus {
-    outline: 1px solid;
-    outline-color: @yellowBad;
+    outline: 2px solid;
+    outline-color: @seaGreen;
+}
+
+.input-alias {
+    width: 50%;
+    align-items: center;
 }
 
 .number-1 {
@@ -80,12 +84,12 @@ textarea {
     border-radius: 10px;
     background-color: @walterBlack;
     color: @seaGreen;
-    border: 1px solid @seaGreen;
+    border: 2px solid @mughalGreen;
 }
 
 textarea:focus {
-    outline: 1px solid;
-    outline-color: @yellowBad;
+    outline: 2px solid;
+    outline-color: @seaGreen;
     padding: 5px 5px;
 }
 
@@ -96,9 +100,19 @@ textarea:focus {
     margin: 20px auto;
     color: @seaGreen;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .contact-form button:focus {
     outline: 1px solid;
-    outline-color: @yellowBad;
+    outline-color: @seaGreen;
+    transition: 0.5s;
+}
+
+.contact-form button:hover {
+    background-color: @yellowBad;
+    color: @darkGreen;
+    outline: 1px solid;
+    outline-color: @walterBlack;
+    transition: 0.75s;
 }

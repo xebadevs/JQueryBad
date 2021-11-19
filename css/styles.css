@@ -115,10 +115,10 @@ hr {
   width: 60%;
   margin: 1vh auto 5vh;
 }
-.post-title {
+.section-aboutus .post-title {
   height: 79vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 40% 60%;
 }
 .aboutus-left {
   grid-column: 1;
@@ -141,7 +141,7 @@ hr {
   width: 40vw;
   height: 30vh;
   border: 1px solid #fdd41a;
-  margin: auto;
+  margin: 40px auto 0 auto;
 }
 .gallery {
   display: grid;
@@ -189,17 +189,17 @@ label:nth-child(1) {
   width: 60%;
 }
 .contact-left {
-  border: 2px solid #369457;
+  border: 2px solid #1f6032;
   width: 60%;
   margin: auto;
   border-radius: 10px;
-  background-color: linear-gradient(315deg, #032202 0%, #0d3e10 35%, #1f6032 100%);
+  background-image: url(../img/hexagons3.svg);
 }
 form {
   width: 80%;
   display: flex;
   flex-direction: column;
-  margin: auto;
+  margin: auto auto;
   text-align: center;
 }
 input[type="text"] {
@@ -208,12 +208,16 @@ input[type="text"] {
   height: 30px;
   margin: 5px 0 10px 0;
   color: #369457;
-  border: 1px solid #369457;
+  border: 2px solid #1f6032;
   padding: 0px 5px;
 }
 input[type="text"]:focus {
-  outline: 1px solid;
-  outline-color: #fdd41a;
+  outline: 2px solid;
+  outline-color: #369457;
+}
+.input-alias {
+  width: 50%;
+  align-items: center;
 }
 .number-1 {
   width: 10%;
@@ -228,11 +232,11 @@ textarea {
   border-radius: 10px;
   background-color: #000002;
   color: #369457;
-  border: 1px solid #369457;
+  border: 2px solid #1f6032;
 }
 textarea:focus {
-  outline: 1px solid;
-  outline-color: #fdd41a;
+  outline: 2px solid;
+  outline-color: #369457;
   padding: 5px 5px;
 }
 .contact-form button {
@@ -242,10 +246,19 @@ textarea:focus {
   margin: 20px auto;
   color: #369457;
   border-radius: 10px;
+  cursor: pointer;
 }
 .contact-form button:focus {
   outline: 1px solid;
-  outline-color: #fdd41a;
+  outline-color: #369457;
+  transition: 0.5s;
+}
+.contact-form button:hover {
+  background-color: #fdd41a;
+  color: #093009;
+  outline: 1px solid;
+  outline-color: #000002;
+  transition: 0.75s;
 }
 .section-main {
   background-image: url(../img/main_bg.jpg);
@@ -262,10 +275,11 @@ textarea:focus {
 .section-privacy .section-title {
   display: inline-flex;
 }
-.post-title .privacy-left {
-  height: 79vh;
+.section-privacy .post-title {
   border: 1px solid blue;
-  display: flex;
+  height: 79vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 .post-title .privacy-left div {
   width: 400px;
@@ -294,6 +308,12 @@ textarea:focus {
 }
 .post-title .privacy-right .small-letter {
   font-size: 1.5rem;
+}
+.privacy-left {
+  display: flex;
+}
+.privacy-left div {
+  margin: auto;
 }
 .privacy-left div img {
   width: 398px;
@@ -325,6 +345,8 @@ textarea:focus {
 }
 .section-products .post-title {
   height: 79vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .section-products .post-title h3 {
   text-align: center;
@@ -341,7 +363,6 @@ textarea:focus {
   display: grid;
   grid-column: 1;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
   height: 60%;
 }
 .gallery-left div,
@@ -350,8 +371,6 @@ textarea:focus {
   height: 210px;
   border: 1px solid #4f7ad1;
   margin: auto;
-  align-items: flex-end;
-  flex-wrap: wrap;
 }
 .gallery-left div img,
 .gallery-right div img {
@@ -426,4 +445,13 @@ textarea:focus {
 }
 .section-products p {
   color: #000002;
+}
+label {
+  font-family: 'Saira', sans-serif;
+}
+.section-contact input[type="text"] {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.section-contact button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

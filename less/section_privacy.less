@@ -9,10 +9,12 @@
     display: inline-flex;
 }
 
-.post-title .privacy-left {
-    height: 79vh;
+.section-privacy .post-title {
     border: 1px solid blue;
-    display: flex;
+    // display: flex;
+    height: 79vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
 }
 
 .post-title .privacy-left div {
@@ -47,6 +49,14 @@
 
 .post-title .privacy-right .small-letter {
     font-size: 1.5rem;
+}
+
+.privacy-left {
+    display: flex;
+}
+
+.privacy-left div {
+    margin: auto;
 }
 
 .privacy-left div img {

@@ -27,6 +27,8 @@
 
 .section-products .post-title {
     height: 79vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .section-products .post-title h3 {
@@ -45,7 +47,6 @@
     display: grid;
     grid-column: 1;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     height: 60%;
 }
 
@@ -54,8 +55,6 @@
     height: 210px;
     border: 1px solid @walterBlue;
     margin: auto;
-    align-items: flex-end;
-    flex-wrap: wrap;
 }
 
 .gallery-left div img, .gallery-right div img {

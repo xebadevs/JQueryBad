@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .section-contact .section-title {
@@ -119,4 +120,21 @@ textarea:focus {
     color: @darkGreen;
     font-weight: bold;
     transition: 0.75s;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    line-height: 85px;
+    background: linear-gradient(90deg, rgba(8,8,7,1) 0%, rgba(253,212,26,1) 70%, rgba(253,212,16,1) 100%);
+    color: @walterWhite;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    color: @walterBlack;
+    font-weight: bold;
+    font-family: @main-question;
 }

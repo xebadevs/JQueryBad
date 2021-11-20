@@ -65,6 +65,7 @@ background: @elementBackgroundThree;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
     5px 5px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-left div img, .gallery-right div img {
@@ -72,4 +73,11 @@ background: @elementBackgroundThree;
     width: 206px;
     height: 206px;
     object-fit: cover;
+    transition: all .5s ease;
+    transform: scale(1.1);
+}
+
+.gallery-left div img:hover, .gallery-right div img:hover {
+    transition: all .5s ease;
+    transform: scale(1);
 }

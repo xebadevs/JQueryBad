@@ -190,7 +190,7 @@ hr {
   width: 206px;
   height: 206px;
   object-fit: cover;
-  transition: all .5s ease;
+  transition: all 1s ease;
   transform: scale(1.4);
 }
 .gallery div img:hover {
@@ -376,11 +376,19 @@ footer p {
   color: #369457;
   margin: 20px 0;
 }
+.privacy-left div {
+  overflow: hidden;
+}
 .privacy-left div img {
   border-radius: 10px;
   width: 398px;
   height: 398px;
   object-fit: cover;
+  transition: all 1.5s ease;
+  transform: scale(1);
+}
+.privacy-left div img:hover {
+  transform: scale(1.25);
 }
 .section-products {
   background-image: url(../img/products_bg.jpg);
@@ -438,6 +446,7 @@ footer p {
   height: 210px;
   margin: auto;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), 5px 5px 15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
 }
 .gallery-left div img,
 .gallery-right div img {
@@ -445,6 +454,13 @@ footer p {
   width: 206px;
   height: 206px;
   object-fit: cover;
+  transition: all .5s ease;
+  transform: scale(1.1);
+}
+.gallery-left div img:hover,
+.gallery-right div img:hover {
+  transition: all .5s ease;
+  transform: scale(1);
 }
 @font-face {
   font-family: 'Genos';

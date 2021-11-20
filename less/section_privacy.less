@@ -66,9 +66,19 @@
     margin: 20px 0;
 }
 
+.privacy-left div {
+    overflow: hidden;
+}
+
 .privacy-left div img {
     .radiusTen;
     width: 398px;
     height: 398px;
     object-fit: cover;
+    transition: all 1.5s ease;
+    transform: scale(1);
+}
+
+.privacy-left div img:hover {
+    transform: scale(1.25);
 }

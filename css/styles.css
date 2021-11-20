@@ -98,12 +98,14 @@ nav {
   border: 1px solid #0d3e10;
   cursor: pointer;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+  transition: all 0.5s ease;
 }
 .nav-buttons button:hover {
   background-color: #fdd41a;
   color: #093009;
   transform: scale(1.1);
-  transition: 0.5s;
+  transition: all 0.5s ease;
 }
 .main-question {
   font-size: 3em;
@@ -181,12 +183,18 @@ hr {
   grid-row: 3;
   margin: auto;
   box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
+  overflow: hidden;
 }
 .gallery div img {
   border-radius: 7px;
   width: 206px;
   height: 206px;
   object-fit: cover;
+  transition: all .5s ease;
+  transform: scale(1.4);
+}
+.gallery div img:hover {
+  transform: scale(1);
 }
 .section-contact {
   background-image: url(../img/contact_bg.jpg);

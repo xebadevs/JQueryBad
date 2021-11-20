@@ -82,6 +82,7 @@ hr {
     margin: auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
     5px 5px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
 }
 
 .gallery div img {
@@ -89,4 +90,10 @@ hr {
     width: 206px;
     height: 206px;
     object-fit: cover;
+    transition: all .5s ease;
+    transform: scale(1.4);
+}
+
+.gallery div img:hover {
+    transform: scale(1);
 }

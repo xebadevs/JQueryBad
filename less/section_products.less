@@ -3,7 +3,6 @@
     background-size: cover;
     height: 100vh;
     width: 100%;
-    border: 1px solid seagreen;
 }
 
 .section-products hr {
@@ -59,18 +58,26 @@ background: @elementBackgroundThree;
 }
 
 .gallery-left div, .gallery-right div {
+    .blueBorder;
+    .radiusTen;
     width: 210px;
-    height: 210px;
-    border: 2px solid @walterBlue;
-    border-radius: 10px;
+    height: 210px; 
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4),
     5px 5px 15px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
 }
 
 .gallery-left div img, .gallery-right div img {
+    .radiusFit;
     width: 206px;
     height: 206px;
     object-fit: cover;
-    border-radius: 7px;
+    transition: all .5s ease;
+    transform: scale(1.1);
+}
+
+.gallery-left div img:hover, .gallery-right div img:hover {
+    transition: all .5s ease;
+    transform: scale(1);
 }

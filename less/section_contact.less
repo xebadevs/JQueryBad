@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
+    position: relative;
 }
 
 .section-contact .section-title {
@@ -20,6 +21,10 @@ label:nth-child(1) {
     margin-top: 20px;
 }
 
+label:nth-child(5) {
+    margin-top: 10px;
+}
+
 .section-contact .title-cont {
     width: 60%;
 }
@@ -30,13 +35,14 @@ label:nth-child(1) {
 
 .contact-form {
     width: 60%;
+    margin-top: 120px;
 }
 
 .contact-left {
-    border: 2px solid @mughalGreen;
+    .darkerBorder;
+    .radiusTen;
     width: 60%;
     margin: auto;
-    border-radius: 10px;
     background-image: url(../img/hexagons3.svg);
 }
 
@@ -48,17 +54,24 @@ form {
     text-align: center;
 }
 
+
+// Common properties
+
+input[type="text"],
+textarea,
+.contact-form button {
+	.radiusTen;
+	.shadowBox;
+	color: @seaGreen;
+	background-color: @walterBlack;
+}
+
 input[type="text"] {
-    background-color: @walterBlack;
-    border-radius: 10px;
+    .darkerBorder;
     height: 30px;
     margin: 5px 0 10px 0;
-    color: @seaGreen;
-    border: 2px solid @mughalGreen;
     padding: 0px 5px;
     text-align: center;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
-    5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 input[type="text"]:focus {
@@ -76,20 +89,16 @@ input[type="text"]:focus {
 }
 
 .number-2 {
-    width: 20%;
+    width: 15%;
 }
 
 .number-3 {
-    width: 50%;
+    width: 30%;
 }
 
 textarea {
-    border-radius: 10px;
-    background-color: @walterBlack;
-    color: @seaGreen;
-    border: 2px solid @mughalGreen;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
-    5px 5px 10px rgba(0, 0, 0, 1);
+    .darkerBorder;
+    margin-top: 5px;
 }
 
 textarea:focus {
@@ -101,13 +110,8 @@ textarea:focus {
 .contact-form button {
     width: 100px;
     height: 30px;
-    background-color: @walterBlack;
     margin: 20px auto;
-    color: @seaGreen;
-    border-radius: 10px;
     cursor: pointer;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
-    5px 5px 10px rgba(0, 0, 0, 1);
 }
 
 .contact-form button:focus,
@@ -119,4 +123,21 @@ textarea:focus {
     color: @darkGreen;
     font-weight: bold;
     transition: 0.75s;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    line-height: 85px;
+    background: linear-gradient(90deg, rgba(8,8,7,1) 0%, rgba(253,212,26,1) 70%, rgba(253,212,16,1) 100%);
+    color: @walterWhite;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    color: @walterBlack;
+    font-weight: bold;
+    font-family: @main-question;
 }

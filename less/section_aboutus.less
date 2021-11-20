@@ -57,10 +57,10 @@ hr {
 }
 
 .video {
+    .boldBorder;
+    .radiusTen;
     width: 40vw;
     height: 30vh;
-    border: 2px solid @seaGreen;
-    border-radius: 10px;
     margin: 40px auto 0 auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
     5px 5px 10px rgba(0, 0, 0, 1);
@@ -74,19 +74,26 @@ hr {
 }
 
 .gallery div {
+    .boldBorder;
+    .radiusTen;
     width: 210px;
     height: 210px;
-    border: 2px solid @seaGreen;
-    border-radius: 10px;
     grid-row: 3;
     margin: auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
     5px 5px 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
 }
 
 .gallery div img {
+    .radiusFit;
     width: 206px;
     height: 206px;
     object-fit: cover;
-    border-radius: 7px;
+    transition: all 1s ease;
+    transform: scale(1.4);
+}
+
+.gallery div img:hover {
+    transform: scale(1);
 }

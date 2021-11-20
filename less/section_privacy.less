@@ -12,14 +12,14 @@
 .section-privacy .post-title {
     height: 79vh;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 10% 40% 40% 10%;
 }
 
 .post-title .privacy-left div {
+    .boldBorder;
+    .radiusTen;
     width: 402px;
     height: 402px;
-    border: 2px solid @seaGreen;
-    border-radius: 10px;
     margin: auto;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 1),
                 5px 5px 10px rgba(0, 0, 0, 1);
@@ -66,9 +66,19 @@
     margin: 20px 0;
 }
 
+.privacy-left div {
+    overflow: hidden;
+}
+
 .privacy-left div img {
+    .radiusTen;
     width: 398px;
     height: 398px;
     object-fit: cover;
-    border-radius: 10px;
+    transition: all 1.5s ease;
+    transform: scale(1);
+}
+
+.privacy-left div img:hover {
+    transform: scale(1.25);
 }

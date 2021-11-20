@@ -247,7 +247,6 @@ textarea:focus {
   outline: 2px solid;
   outline-color: #369457;
   padding: 5px 5px;
-  font-size: 1.3rem;
 }
 .contact-form button {
   width: 100px;

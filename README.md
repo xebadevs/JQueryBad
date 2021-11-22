@@ -10,6 +10,12 @@ By the end of 2021, according to several researchs, is the **third most used JS 
 
 ## Inspiration
 
-I want to include in this case a contact form, because their importance about client interaction, validations (at least in the front in the current project) and for being such a common section. And use JQuery to that.
+I want to include in this case a contact form, because their importance about client interaction, validations (at least in the front-end in the current project) and for being such a common and useful section. And use JQuery to that.
 
 But, then, a form contact for who? And this amazing serie comes to my mind. From them, it was just connecting the dots.
+
+## Features
+
+- Use of less
+- Contact form validations
+- JQuery

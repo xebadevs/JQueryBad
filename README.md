@@ -14,6 +14,8 @@ I want to include in this case a contact form, because their importance about cl
 
 But, then, a form contact for who? And this amazing serie comes to my mind. From them, it was just connecting the dots.
 
+Mission: to know about Heisenberg and her brand, products, privacity (for the kind of products, of course) and to contact her throw a web form.
+
 ## Features
 
 - Use of less

@@ -35,10 +35,10 @@
                 </div>
 
                 <div class="nav-buttons">
-                    <a href="#section-aboutus"><button>about us</button></a>
-                    <a href="#section-products"><button>products</button></a>
-                    <a href="#section-privacy"><button>privacy</button></a>
-                    <a href="#section-contact"><button>contact</button></a>
+                    <a href="#section-aboutus"><button id="btn_aboutus">about us</button></a>
+                    <a href="#section-products"><button id="btn_products">products</button></a>
+                    <a href="#section-privacy"><button id="btn_privacy">privacy</button></a>
+                    <a href="#section-contact"><button id="btn_contact">contact</button></a>
                 </div>
             </nav>
             <span class="main-question">HOW CAN I HELP YOU?</span>
@@ -86,7 +86,7 @@
                 <p>A stealthy distribution, without names, for an unbeatable shopping experience.</p>
             </div>
             <div class="aboutus-right">
-                <div class="video"></div>
+                <div class="video" id="iframe"></div>
                 <div class="gallery">
                     <div><img src="./img/aboutus1.jpg" alt=""></div>
                     <div><img src="./img/aboutus2.jpg" alt=""></div>
@@ -231,7 +231,7 @@
                         </div>
                         <label for="message">LEAVE YOUR MESSAGE. WE WILL CONTACT YOU.</label>
                         <textarea name="message" id="textarea" cols="30" rows="10"></textarea>
-                        <button>SEND</button>
+                        <button id="form_send">SEND</button>
                     </form>
                 </div>
                 <div class="contact-right">

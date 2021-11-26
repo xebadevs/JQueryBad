@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+#fullpage {
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  #fullpage section {
+    height: 100vh;
+  }
+  
+  #fullpage section h1 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 100vh;
+    font-size: 10em;
+  }
+  #fullpage section:nth-child(1) {
+    background-image: url(../img/main_bg.jpg);
+  }
+
 @import url(mixins.less);
 @import url(nav.less);
 @import url(section_aboutus.less);

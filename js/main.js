@@ -32,3 +32,14 @@ $(function() {
         }
     });
 });
+
+// FULL PAGE SCROLL
+$('#fullpage').fullpage();
+
+btn_aboutus.click(coso)
+
+function coso() {
+    form_send.click(function(){
+        $('body').animate({scrollTop:0}, '2000')}
+        )
+    }

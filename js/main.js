@@ -20,18 +20,26 @@ const form_send = $('#form_send');
 
 // ------------------------------  FUNCTIONS ------------------------------
 
-function scrolling() {
-    $('a[href*=\\#]:not([href=\\#])').on('click', function() {
-        let target = $(this.hash)
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']')
-        if (target.length) {
-            $('html,body').animate({
-                scrollTop: target.offset().top
-            }, 1500)
-            return false
-        }
-    })
-}
+// function scrolling() {
+//     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
+//         let target = $(this.hash)
+//         target = target.length ? target : $('[name=' + this.hash.substr(1) +']')
+//         if (target.length) {
+//             $('section').animate({
+//                 scrollTop: target.offset().top
+//             }, 1500)
+//             return false
+//         }
+//     })
+// }
 
 // FULL PAGE SCROLL
 $('#fullpage').fullpage()
+
+let sectionOne = document.getElementById('section-aboutus')
+
+sectionOne.classList.add('active')
+
+$('.section-main').bind('mousewheel', function(){
+    return false
+})

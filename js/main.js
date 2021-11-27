@@ -11,7 +11,7 @@ const element_Ta = $('.element_Ta');
 const btn_aboutus = $('#btn_aboutus');
 const btn_products = $('#btn_products');
 const btn_privacy = $('#btn_privacy');
-const btn_contact = $('#btn_contact');
+const btn_contact = $('#btn_contact_bgc');
 
 const iframe = $('#iframe');
 
@@ -20,26 +20,18 @@ const form_send = $('#form_send');
 
 // ------------------------------  FUNCTIONS ------------------------------
 
-$(function() {
+function scrolling() {
     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
-        let target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+        let target = $(this.hash)
+        target = target.length ? target : $('[name=' + this.hash.substr(1) +']')
         if (target.length) {
             $('html,body').animate({
                 scrollTop: target.offset().top
-            }, 1500);
-            return false;
+            }, 1500)
+            return false
         }
-    });
-});
+    })
+}
 
 // FULL PAGE SCROLL
-$('#fullpage').fullpage();
-
-btn_aboutus.click(coso)
-
-function coso() {
-    form_send.click(function(){
-        $('body').animate({scrollTop:0}, '2000')}
-        )
-    }
+$('#fullpage').fullpage()

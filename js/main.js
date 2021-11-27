@@ -53,3 +53,9 @@ function staticView(){
     // alert('click')
     unableWheel($(this).attr('href'))
 }
+
+$('#form_send').on('click', reload)
+
+function reload(){
+    location.reload(true)
+}

@@ -41,6 +41,23 @@
 .shadowBox {
   box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
 }
+.toTopBtn {
+  position: absolute;
+  right: 8vh;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  opacity: 1;
+}
+.toTopArrow {
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #369457;
+  border: 1px solid #369457;
+  border-radius: 10px;
+}
 nav {
   background: linear-gradient(76deg, #000002 0%, #032202 100%);
   height: 11vh;
@@ -213,24 +230,21 @@ hr {
 .gallery div img:hover {
   transform: scale(1);
 }
-.toTopBtn button {
+.toTopBtn1 {
   position: absolute;
   right: 8vh;
-  top: 37%;
   width: 21px;
   height: 21px;
   background: transparent;
   border: none;
   opacity: 1;
+  top: 37%;
 }
-.toTopBtn button:active {
-  opacity: 1;
-}
-.toTopBtn img {
+.toTopArrow1 {
   width: 50px;
   margin: auto;
-  background-color: #369457;
   cursor: pointer;
+  background-color: #369457;
   border: 1px solid #369457;
   border-radius: 10px;
 }
@@ -352,6 +366,24 @@ footer p {
   font-weight: bold;
   font-family: 'Saira', sans-serif;
 }
+.toTopBtn4 {
+  position: absolute;
+  right: 8vh;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  opacity: 1;
+  top: 45%;
+}
+.toTopArrow4 {
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #369457;
+  border: 1px solid #369457;
+  border-radius: 10px;
+}
 .section-main {
   background-image: url(../img/main_bg.jpg);
   background-size: cover;
@@ -428,6 +460,24 @@ footer p {
 .privacy-left div img:hover {
   transform: scale(1.25);
 }
+.toTopBtn3 {
+  position: absolute;
+  right: 8vh;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  opacity: 1;
+  top: 55%;
+}
+.toTopArrow3 {
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #369457;
+  border: 1px solid #369457;
+  border-radius: 10px;
+}
 .section-products {
   background-image: url(../img/products_bg.jpg);
   background-size: cover;
@@ -499,6 +549,26 @@ footer p {
 .gallery-right div img:hover {
   transition: all .5s ease;
   transform: scale(1);
+}
+.toTopBtn2 {
+  position: absolute;
+  right: 8vh;
+  width: 21px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  opacity: 1;
+  top: 40%;
+}
+.toTopArrow2 {
+  width: 50px;
+  margin: auto;
+  cursor: pointer;
+  background-color: #369457;
+  border: 1px solid #369457;
+  border-radius: 10px;
+  background-color: #4f7ad1;
+  border: 1px solid #4f7ad1;
 }
 @font-face {
   font-family: 'Genos';

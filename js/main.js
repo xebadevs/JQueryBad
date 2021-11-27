@@ -17,25 +17,16 @@ const iframe = $('#iframe');
 
 const form_send = $('#form_send');
 
+const section1 = $('#section1').attr('href').substring(1)
+const section2 = $('#section2').attr('href').substring(1)
+const section3 = $('#section3').attr('href').substring(1)
+const section4 = $('#section4').attr('href').substring(1)
+
 
 // ------------------------------  FUNCTIONS ------------------------------
 
-// function scrolling() {
-//     $('a[href*=\\#]:not([href=\\#])').on('click', function() {
-//         let target = $(this.hash)
-//         target = target.length ? target : $('[name=' + this.hash.substr(1) +']')
-//         if (target.length) {
-//             $('section').animate({
-//                 scrollTop: target.offset().top
-//             }, 1500)
-//             return false
-//         }
-//     })
-// }
-
 // FULL PAGE SCROLL
 $('#fullpage').fullpage()
-
 
 // UNABLE WHEEL
 function unableWheel(section){
@@ -44,7 +35,6 @@ function unableWheel(section){
     })
 }
 
-
 // ABLE WHEEL
 function ableWheel(section){
     $(section).bind('mousewheel', function(){
@@ -52,4 +42,14 @@ function ableWheel(section){
     })
 }
 
-// unableWheel('.section-products')
+// STATIC SECTIONS from NAV BUTTONS
+$('#section1').on('click', staticView)
+$('#section2').on('click', staticView)
+$('#section3').on('click', staticView)
+$('#section4').on('click', staticView)
+
+// STATIC VIEW clicking NAV BUTTONS
+function staticView(){
+    // alert('click')
+    unableWheel($(this).attr('href'))
+}

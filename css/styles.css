@@ -213,9 +213,6 @@ hr {
 .gallery div img:hover {
   transform: scale(1);
 }
-.section-aboutus {
-  display: none;
-}
 .section-contact {
   background-image: url(../img/contact_bg.jpg);
   background-size: cover;

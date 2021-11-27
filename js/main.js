@@ -36,10 +36,20 @@ const form_send = $('#form_send');
 // FULL PAGE SCROLL
 $('#fullpage').fullpage()
 
-let sectionOne = document.getElementById('section-aboutus')
 
-sectionOne.classList.add('active')
+// UNABLE WHEEL
+function unableWheel(section){
+    $(section).bind('mousewheel', function(){
+        return false
+    })
+}
 
-$('.section-main').bind('mousewheel', function(){
-    return false
-})
+
+// ABLE WHEEL
+function ableWheel(section){
+    $(section).bind('mousewheel', function(){
+        return true
+    })
+}
+
+// unableWheel('.section-products')

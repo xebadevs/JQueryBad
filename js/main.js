@@ -133,7 +133,7 @@ $(function(){
                 },
                 number1:{
                     required: '!!',
-                    minlength: 'Min: 1 number',
+                    minlength: '!!',
                     maxlength: 'Max: 4',
                     addPlus: 'Ex: +99'
                 },
@@ -164,7 +164,9 @@ $(function(){
 // SEND BUTTON
 $('#form_send').on('click', function(e){
     e.preventDefault()
-    $('#confirmation').removeClass('invisible')
-    $('#confirmation').addClass('received')
-    $('#crystal-form')[0].reset()
+    if($('#crystal-form').valid()){
+        $('#confirmation').removeClass('invisible')
+        $('#confirmation').addClass('received')
+        $('#crystal-form')[0].reset()
+    }
 })

@@ -44,14 +44,24 @@ function ableWheel(section){
 
 // STATIC SECTIONS from NAV BUTTONS
 $('#section1').on('click', staticView)
-$('#section2').on('click', staticView)
-$('#section3').on('click', staticView)
+$('#section2').on('click', staticView2)
+$('#section3').on('click', staticView3)
 $('#section4').on('click', staticView)
 
 // STATIC VIEW clicking NAV BUTTONS
 function staticView(){
-    // alert('click')
     unableWheel($(this).attr('href'))
+    $('#section1top').css('opacity', 1)
+}
+
+function staticView2(){
+    unableWheel($(this).attr('href'))
+    $('#section2top').css('opacity', 1)
+}
+
+function staticView3(){
+    unableWheel($(this).attr('href'))
+    $('#section3top').css('opacity', 1)
 }
 
 $('#form_send').on('click', reload)
@@ -59,3 +69,7 @@ $('#form_send').on('click', reload)
 function reload(){
     location.reload(true)
 }
+
+$('#section1top').css('opacity', 0)
+$('#section2top').css('opacity', 0)
+$('#section3top').css('opacity', 0)

@@ -168,5 +168,8 @@ $('#form_send').on('click', function(e){
         $('#confirmation').removeClass('invisible')
         $('#confirmation').addClass('received')
         $('#crystal-form')[0].reset()
+        setTimeout(function(){
+            $('#confirmation').addClass('invisible')
+        }, 5000)
     }
 })

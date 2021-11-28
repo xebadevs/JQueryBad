@@ -195,19 +195,27 @@ hr {
   line-height: 50px;
   text-align: center;
 }
-.video {
+.cont-video {
   border: 2px solid #369457;
   border-radius: 10px;
-  width: 40vw;
-  height: 30vh;
-  margin: 40px auto 0 auto;
+  width: 620px;
+  height: 350px;
+  margin: 20px auto 0 auto;
   box-shadow: 5px 5px 5px #000000, 5px 5px 10px #000000;
+}
+.video {
+  width: 616px;
+  height: 346px;
+  border-radius: 7px;
+}
+video::-webkit-media-controls-fullscreen-button {
+  display: none;
 }
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  height: 50%;
+  height: 40%;
 }
 .gallery div {
   border: 2px solid #369457;

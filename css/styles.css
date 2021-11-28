@@ -384,6 +384,11 @@ footer p {
   border: 1px solid #369457;
   border-radius: 10px;
 }
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 2px 2px 0 8px;
+}
 .section-main {
   background-image: url(../img/main_bg.jpg);
   background-size: cover;

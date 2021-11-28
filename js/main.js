@@ -48,7 +48,12 @@ $('#section2').on('click', staticView2)
 $('#section3').on('click', staticView3)
 $('#section4').on('click', staticView)
 
+
 // STATIC VIEW clicking NAV BUTTONS
+$('#section1top').css('opacity', 0)
+$('#section2top').css('opacity', 0)
+$('#section3top').css('opacity', 0)
+
 function staticView(){
     unableWheel($(this).attr('href'))
     $('#section1top').css('opacity', 1)
@@ -64,12 +69,92 @@ function staticView3(){
     $('#section3top').css('opacity', 1)
 }
 
-$('#form_send').on('click', reload)
 
-function reload(){
-    location.reload(true)
-}
+// FORM
+$(function(){
+    let $form = $('#crystal-form')
 
-$('#section1top').css('opacity', 0)
-$('#section2top').css('opacity', 0)
-$('#section3top').css('opacity', 0)
+    // Reg Exp for Number: +54
+    $.validator.addMethod('addPlus',function(val, elem){
+        return this.optional(elem) || /^(?:[+\d].*\d)$/gm.test(val)
+    })
+
+    // Reg Exp for Alias
+    $.validator.addMethod('justLetters', function(val, elem){
+        return this.optional(elem) || /^[a-zA-Z]+$/.test(val)
+    })
+
+    // Reg Exp for Message
+    $.validator.addMethod('avoidNinjas', function(val, elem){
+        return this.optional(elem) || /^[^<>%$]*$/.test(val)
+    })
+
+    // Form validation
+    if($form.length){
+        $form.validate({
+            rules:{
+                alias:{
+                    required: true,
+                    minlength: 3,
+                    maxlength: 15,
+                    justLetters: true
+                },
+                number1:{
+                    required: true,
+                    minlength: 2,
+                    maxlength: 4,
+                    addPlus: true
+                },
+                number2:{
+                    required: true,
+                    digits: true,
+                    minlength: 3,
+                    maxlength: 4,
+                },
+                number3:{
+                    required: true,
+                    digits: true,
+                    minlength: 5,
+                    maxlength: 9,
+                },
+                message:{
+                    required: true,
+                    minlength: 7,
+                    maxlength: 200,
+                    avoidNinjas: true
+                }
+            },
+            messages:{
+                alias:{
+                    required: '<br>Really? Nothing?',
+                    minlength: '<br>Insert at least 3 characters',
+                    maxlength: '<br>The maximum allowed is 15',
+                    justLetters: '<br>Just regular letters'
+                },
+                number1:{
+                    required: '!!',
+                    minlength: 'Min: 1 number',
+                    addPlus: 'Ex: +99'
+                },
+                number2:{
+                    required: '!!',
+                    minlength: 'Min: 3',
+                    maxlength: 'Max: 4',
+                    digits: 'Numbers only',
+                },
+                number3:{
+                    required: '!!',
+                    minlength: 'Min: 5',
+                    maxlength: 'Max: 9',
+                    digits: 'Numbers only',
+                },
+                message:{
+                    required: 'Again... HOW CAN I HELP YOU?',
+                    minlength: 'Write a more extensive message',
+                    maxlength: 'Just be brief',
+                    avoidNinjas: 'No special characters allowed here'
+                }
+            }
+        })
+    }
+})

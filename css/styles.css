@@ -366,6 +366,12 @@ footer p {
   font-weight: bold;
   font-family: 'Saira', sans-serif;
 }
+.received {
+  font-family: 'Saira', sans-serif;
+  color: #369457;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
 .toTopBtn4 {
   position: absolute;
   right: 8vh;
@@ -388,6 +394,9 @@ footer p {
   color: red;
   font-weight: bold;
   margin: 2px 2px 0 8px;
+}
+.invisible {
+  opacity: 0;
 }
 .section-main {
   background-image: url(../img/main_bg.jpg);

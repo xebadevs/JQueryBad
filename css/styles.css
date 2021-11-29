@@ -141,12 +141,6 @@ nav {
   transform: scale(1.1);
   transition: all 1s ease;
 }
-.main-question {
-  font-size: 3em;
-  position: relative;
-  top: 40%;
-  left: 12%;
-}
 @media screen and (max-width: 450px) {
   .chElement,
   .chElementTwo,
@@ -175,6 +169,12 @@ nav {
     margin-left: 2%;
   }
   .nav-buttons {
+    position: absolute;
+    right: 500px;
+  }
+  .nav-buttons,
+  .nav-buttons a,
+  .nav-buttons a button {
     width: 0;
     height: 0;
     opacity: 0;
@@ -440,10 +440,15 @@ footer p {
   opacity: 0;
 }
 .section-main {
-  background-image: url(../img/main_bg.jpg);
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+.main-question {
+  font-size: 3em;
+  position: relative;
+  top: 40%;
+  left: 12%;
 }
 .section-privacy {
   background-image: url(../img/hexagons2.svg);
@@ -701,4 +706,18 @@ label {
 }
 .section-contact button {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media screen and (max-width: 450px) {
+  .main-question {
+    width: 220px;
+    font-size: 2.5rem;
+    position: absolute;
+    left: 3%;
+    top: 45%;
+  }
+}
+@media screen and (max-width: 450px) {
+  #fullpage section:nth-child(1) {
+    background-image: url(../img/main_bg_mq.jpg);
+  }
 }

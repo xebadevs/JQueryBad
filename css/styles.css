@@ -481,6 +481,38 @@ footer p {
 .invisible {
   opacity: 0;
 }
+@media screen and (max-width: 450px) {
+  .contact-left {
+    width: 100%;
+  }
+  .contact-form {
+    width: 95%;
+    margin: auto;
+  }
+  .section-contact .title-cont {
+    width: 100%;
+  }
+  .left-hr {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  textarea {
+    width: 95%;
+    margin: 8px auto 0 auto;
+  }
+  .toTopArrow4 {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  footer {
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(90deg, #080807 0%, #fdd41a 70%, #080807 100%);
+  }
+}
 .section-main {
   background-size: cover;
   width: 100%;
@@ -527,13 +559,14 @@ footer p {
 .post-title .privacy-right p {
   color: #e8edf0;
   text-align: center;
-  margin: auto;
+  margin: 0 auto 80px auto;
 }
-.post-title .privacy-right p:nth-child(1),
-.post-title .privacy-right p:nth-child(5),
-.post-title .privacy-right p:nth-child(9) {
+.post-title .privacy-right span {
   color: #369457;
+  font-family: 'Saira', sans-serif;
+  text-align: center;
   font-weight: bold;
+  font-size: 2rem;
 }
 .post-title .privacy-right .small-letter {
   font-size: 1.5rem;
@@ -579,6 +612,37 @@ footer p {
   background-color: #369457;
   border: 1px solid #369457;
   border-radius: 10px;
+}
+@media screen and (max-width: 450px) {
+  .section-privacy .post-title {
+    display: block;
+  }
+  .post-title .privacy-left div {
+    width: 160px;
+    height: 160px;
+    margin-top: 15px;
+  }
+  .privacy-left div img {
+    width: 156px;
+    height: 156px;
+  }
+  .post-title .privacy-left p {
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  .post-title .privacy-right p:nth-child(1),
+  .post-title .privacy-right p:nth-child(5),
+  .post-title .privacy-right p:nth-child(9) {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  .post-title .privacy-right p {
+    font-size: 12px;
+    margin: 0 auto 25px auto;
+  }
+  .post-title .privacy-right span {
+    font-size: 1.2rem;
+  }
 }
 .section-products {
   background-image: url(../img/products_bg.jpg);
@@ -682,7 +746,11 @@ footer p {
     display: flex;
   }
   .section-products .post-title h3 {
+<<<<<<< HEAD
     margin-bottom: 0px;
+=======
+    margin-bottom: 5px;
+>>>>>>> tmp
   }
   .section-products .products-left {
     margin-right: 5px;
@@ -702,6 +770,15 @@ footer p {
     display: block;
     margin: 15px;
   }
+<<<<<<< HEAD
+=======
+  .gallery-left div,
+  .gallery-right div {
+    width: 120px;
+    height: 120px;
+    margin: 10px auto;
+  }
+>>>>>>> tmp
 }
 @font-face {
   font-family: 'Genos';
@@ -791,6 +868,7 @@ label {
   .post-title p {
     font-size: 1.2rem;
   }
+<<<<<<< HEAD
   .product-left {
     margin-top: 10px;
   }
@@ -815,6 +893,11 @@ label {
     width: 121px;
     height: 121px;
   }
+=======
+  .section-products h3 {
+    font-size: 1.5rem;
+  }
+>>>>>>> tmp
 }
 @media screen and (max-width: 450px) {
   .fullpage section:nth-child(1) {

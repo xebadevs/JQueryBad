@@ -675,6 +675,7 @@ footer p {
 @media screen and (max-width: 450px) {
   .hr-blue {
     width: 80%;
+    margin-bottom: 20px;
   }
   .section-products .post-title {
     height: 79vh;
@@ -682,6 +683,12 @@ footer p {
   }
   .section-products .post-title h3 {
     margin-bottom: 0px;
+  }
+  .section-products .products-left {
+    margin-right: 5px;
+  }
+  .section-products .products-right {
+    margin-left: 5px;
   }
   .section-products .post-title p {
     text-align: center;
@@ -693,6 +700,7 @@ footer p {
   .gallery-left,
   .gallery-right {
     display: block;
+    margin: 15px;
   }
 }
 @font-face {

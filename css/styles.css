@@ -746,11 +746,7 @@ footer p {
     display: flex;
   }
   .section-products .post-title h3 {
-<<<<<<< HEAD
-    margin-bottom: 0px;
-=======
     margin-bottom: 5px;
->>>>>>> tmp
   }
   .section-products .products-left {
     margin-right: 5px;
@@ -770,15 +766,12 @@ footer p {
     display: block;
     margin: 15px;
   }
-<<<<<<< HEAD
-=======
   .gallery-left div,
   .gallery-right div {
     width: 120px;
     height: 120px;
     margin: 10px auto;
   }
->>>>>>> tmp
 }
 @font-face {
   font-family: 'Genos';
@@ -868,7 +861,6 @@ label {
   .post-title p {
     font-size: 1.2rem;
   }
-<<<<<<< HEAD
   .product-left {
     margin-top: 10px;
   }
@@ -893,11 +885,9 @@ label {
     width: 121px;
     height: 121px;
   }
-=======
   .section-products h3 {
     font-size: 1.5rem;
   }
->>>>>>> tmp
 }
 @media screen and (max-width: 450px) {
   .fullpage section:nth-child(1) {

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 .fullpage {
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 .fullpage section {
@@ -860,30 +860,6 @@ label {
   }
   .post-title p {
     font-size: 1.2rem;
-  }
-  .product-left {
-    margin-top: 10px;
-  }
-  .section-products h3 {
-    text-shadow: 2px 2px 3px #000002;
-    font-size: 1.5rem;
-  }
-  .section-products p {
-    font-size: 16px;
-    width: 100%;
-    border: 1px solid transparent;
-  }
-  .gallery-left div,
-  .gallery-right div {
-    width: 125px;
-    height: 125px;
-    margin: 5px auto;
-  }
-  .gallery-left div img,
-  .gallery-right div img {
-    border-radius: 7px;
-    width: 121px;
-    height: 121px;
   }
   .section-products h3 {
     font-size: 1.5rem;

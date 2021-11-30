@@ -215,6 +215,9 @@ hr {
   display: grid;
   grid-template-columns: 40% 60%;
 }
+.section-aboutus .post-title p {
+  margin-top: 50px;
+}
 .aboutus-left {
   grid-column: 1;
   grid-row: auto;
@@ -294,6 +297,29 @@ video::-webkit-media-controls-fullscreen-button {
     height: auto;
     display: flex;
     flex-direction: column;
+  }
+  .aboutus-left {
+    padding-top: 0px;
+    height: auto;
+  }
+  .aboutus-left p {
+    line-height: 25px;
+  }
+  hr {
+    width: 80%;
+    margin: auto;
+  }
+  .section-aboutus .post-title p {
+    margin-top: 20px;
+    font-size: 1em;
+  }
+  .cont-video {
+    width: 95%;
+    height: 100%;
+  }
+  .video {
+    width: 100%;
+    height: 115%;
   }
 }
 .section-contact {
@@ -721,6 +747,9 @@ label {
     position: absolute;
     left: 3%;
     top: 45%;
+  }
+  .post-title p {
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 450px) {

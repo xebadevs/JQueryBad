@@ -40,14 +40,15 @@
 .post-title .privacy-right p {
     color: @walterWhite;
     text-align: center;
-    margin: auto;
+    margin: 0 auto 80px auto;
 }
 
-.post-title .privacy-right p:nth-child(1),
-.post-title .privacy-right p:nth-child(5),
-.post-title .privacy-right p:nth-child(9) {
+.post-title .privacy-right span {
     color: @seaGreen;
+    font-family: @main-question;
+    text-align: center;
     font-weight: bold;
+    font-size: 2rem;
 }
 
 .post-title .privacy-right .small-letter {
@@ -90,4 +91,38 @@
 
 .toTopArrow3 {
     .toTopArrow;
+}
+
+
+// MEDIA QUERIES
+@media screen and (max-width: 450px){
+    .section-privacy .post-title {
+        display: block;
+    }
+    .post-title .privacy-left div {
+        width: 160px;
+        height: 160px;
+        margin-top: 15px;
+    }
+    .privacy-left div img {
+        width: 156px;
+        height: 156px;
+    }
+    .post-title .privacy-left p {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+    .post-title .privacy-right p:nth-child(1),
+    .post-title .privacy-right p:nth-child(5),
+    .post-title .privacy-right p:nth-child(9) {
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .post-title .privacy-right p {
+        font-size: 12px;
+        margin: 0 auto 25px auto;
+    }
+    .post-title .privacy-right span {
+        font-size: 1.2rem;
+    }
 }

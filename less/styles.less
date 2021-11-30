@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-#fullpage {
+.fullpage {
     height: 100vh;
     overflow: hidden;
   }
   
-#fullpage section {
+.fullpage section {
     height: 100vh;
   }
   
-#fullpage section h1 {
+.fullpage section h1 {
     margin: 0;
     padding: 0;
     text-align: center;
@@ -21,7 +21,7 @@
     font-size: 10em;
   }
 
-#fullpage section:nth-child(1) {
+.fullpage section:nth-child(1) {
     background-image: url(../img/main_bg.jpg);
   }
 
@@ -38,7 +38,10 @@
 
 // MEDIA QUERIES
 @media screen and (max-width: 450px){
-  #fullpage section:nth-child(1) {
+  .fullpage section:nth-child(1) {
     background-image: url(../img/main_bg_mq.jpg);
+  }
+  .fullpage {
+    height: auto;
   }
 }

@@ -25,9 +25,6 @@ const section4 = $('#section4').attr('href').substring(1)
 
 // ------------------------------  FUNCTIONS ------------------------------
 
-// FULL PAGE SCROLL
-$('#fullpage').fullpage()
-
 // UNABLE WHEEL
 function unableWheel(section){
     $(section).bind('mousewheel', function(){
@@ -173,3 +170,10 @@ $('#form_send').on('click', function(e){
         }, 5000)
     }
 })
+
+
+// MEDIAQUERIES
+
+if($(window).width() > 1000){
+    $('#fullpage').fullpage()
+}

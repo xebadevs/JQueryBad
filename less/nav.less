@@ -136,3 +136,40 @@ nav {
         opacity: 0;
     }
 }
+
+@media screen and (max-width: 320px){
+    nav {
+        height: 12vh;
+    }
+}
+
+@media screen and (max-width: 280px){
+    .textCenter {
+        font-size: 26px;
+    }
+}
+
+
+// iPADS
+@media screen and (max-width: 768px) and (orientation: portrait){
+    .textCenter {
+        font-size: 35px;
+    }
+    .nav-buttons button {
+        width: 80px;
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    .cont-logo {
+        grid-column: 2;
+    }
+    .nav-buttons {
+        margin-right:  15px;
+    }
+    .nav-buttons button {
+        margin: auto 5px;
+    }
+}

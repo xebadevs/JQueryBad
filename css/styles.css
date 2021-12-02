@@ -190,6 +190,27 @@ nav {
     font-size: 26px;
   }
 }
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  .textCenter {
+    font-size: 35px;
+  }
+  .nav-buttons button {
+    width: 80px;
+    padding: 5px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .cont-logo {
+    grid-column: 2;
+  }
+  .nav-buttons {
+    margin-right: 15px;
+  }
+  .nav-buttons button {
+    margin: auto 5px;
+  }
+}
 .section-aboutus {
   background-image: url(../img/hexagons.svg);
   background-size: cover;
@@ -343,7 +364,7 @@ video::-webkit-media-controls-fullscreen-button {
 }
 @media screen and (max-width: 375px) {
   hr {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
   .section-aboutus .post-title p {
     font-size: 0.8em;
@@ -353,6 +374,43 @@ video::-webkit-media-controls-fullscreen-button {
   .section-aboutus .post-title p {
     margin-top: 10px;
     font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  hr {
+    margin-bottom: 10px;
+  }
+  .section-aboutus .post-title {
+    display: block;
+  }
+  .section-aboutus .post-title p {
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+  .aboutus-left {
+    height: auto;
+  }
+  .cont-video {
+    margin: 50px auto;
+  }
+  .toTopArrow1 {
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: portrait) {
+  hr {
+    margin-bottom: 0;
+  }
+  .section-aboutus .post-title p {
+    font-size: 1.1em;
+  }
+  .gallery {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .toTopArrow1 {
+    margin-top: 350px;
   }
 }
 .section-contact {

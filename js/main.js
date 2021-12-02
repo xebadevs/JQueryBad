@@ -174,6 +174,6 @@ $('#form_send').on('click', function(e){
 
 // MEDIAQUERIES
 
-if($(window).width() > 1000){
+if($(window).width() > 1100){
     $('#fullpage').fullpage()
 }

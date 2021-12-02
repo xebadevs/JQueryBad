@@ -617,6 +617,11 @@ footer p {
   top: 40%;
   left: 12%;
 }
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .main-question {
+    left: 2%;
+  }
+}
 .section-privacy {
   background-image: url(../img/hexagons2.svg);
   background-size: cover;
@@ -1079,5 +1084,10 @@ label {
   }
   .fullpage {
     height: auto;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .fullpage section:nth-child(1) {
+    background-image: url(../img/main_bg_mq.jpg);
   }
 }

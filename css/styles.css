@@ -606,6 +606,23 @@ footer p {
     height: 110px;
   }
 }
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .contact-left {
+    width: 70%;
+  }
+  .section-contact .title-cont {
+    width: 100%;
+  }
+  .left-hr {
+    width: 100%;
+  }
+  hr {
+    width: 80%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}
 .section-main {
   background-size: cover;
   width: 100%;
@@ -973,6 +990,9 @@ footer p {
   }
 }
 @media screen and (max-width: 1024px) and (orientation: portrait) {
+  .hr-blue {
+    width: 80%;
+  }
   .gallery-left,
   .gallery-right {
     display: block;

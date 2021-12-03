@@ -211,6 +211,15 @@ nav {
     margin: auto 5px;
   }
 }
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  nav {
+    height: 15vh;
+  }
+  .nav-buttons button {
+    width: 80px;
+    padding: 5px;
+  }
+}
 .section-aboutus {
   background-image: url(../img/hexagons.svg);
   background-size: cover;
@@ -411,6 +420,40 @@ video::-webkit-media-controls-fullscreen-button {
   }
   .toTopArrow1 {
     margin-top: 350px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .section-aboutus .post-title p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+  .gallery div {
+    width: 180px;
+    height: 180px;
+  }
+  .gallery div img {
+    width: 176px;
+    height: 176px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .section-aboutus .post-title p {
+    font-size: 0.8em;
+    margin-top: 5px;
+  }
+  .cont-video {
+    width: 496px;
+    height: 280px;
+    margin: 90px auto 0 auto;
+  }
+  .video {
+    width: 492px;
+    height: 276px;
+  }
+  .gallery {
+    width: 0;
+    height: 0;
+    opacity: 0;
   }
 }
 .section-contact {
@@ -635,6 +678,11 @@ footer p {
   left: 12%;
 }
 @media screen and (max-width: 1024px) and (orientation: portrait) {
+  .main-question {
+    left: 2%;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   .main-question {
     left: 2%;
   }
@@ -1035,6 +1083,45 @@ footer p {
   }
   .toTopArrow2 {
     margin-top: 250px ;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .section-products .post-title h3 {
+    font-size: 2rem;
+  }
+  .section-products .post-title p {
+    font-size: 1.4rem;
+    padding: 0 15%;
+  }
+  .gallery-left div,
+  .gallery-right div {
+    width: 150px;
+    height: 150px;
+  }
+  .gallery-left div img,
+  .gallery-right div img {
+    width: 150px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .section-products .post-title h3 {
+    font-size: 1.5rem;
+  }
+  .section-products .post-title p {
+    font-size: 1rem;
+    line-height: 1.8rem;
+    padding: 0 15%;
+  }
+  .gallery-left div,
+  .gallery-right div {
+    width: 130px;
+    height: 130px;
+  }
+  .gallery-left div img,
+  .gallery-right div img {
+    width: 130px;
+    height: 130px;
   }
 }
 @font-face {

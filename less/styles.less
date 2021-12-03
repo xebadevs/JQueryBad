@@ -37,18 +37,20 @@
 
 
 // MEDIA QUERIES
+// iPADS
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+  .fullpage section:nth-child(1){
+    background-image: url(../img/main_bg_mq.jpg);
+  }
+}
+
+
+// CELLPHONES
 @media screen and (max-width: 450px){
   .fullpage section:nth-child(1) {
     background-image: url(../img/main_bg_mq.jpg);
   }
   .fullpage {
     height: auto;
-  }
-}
-
-// iPADS
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-  .fullpage section:nth-child(1){
-    background-image: url(../img/main_bg_mq.jpg);
   }
 }

@@ -123,6 +123,93 @@ video::-webkit-media-controls-fullscreen-button {
 
 
 // MEDIA QUERIES
+// NEST HUBS
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .section-aboutus .post-title p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    .gallery div {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .gallery div img {
+        width: 176px;
+        height: 176px;
+    }
+    .toTopArrow1 {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .section-aboutus .post-title p {
+        font-size: 0.8em;
+        margin-top: 5px;
+    }
+    .cont-video {
+        width: 496px;
+        height: 280px;
+        margin: 90px auto 0 auto;
+    }
+    .video {
+        width: 492px;
+        height: 276px;
+    }
+    .gallery {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .toTopArrow1 {
+        margin-top: 100px;
+    }
+}
+
+
+// iPADS
+@media screen and (max-width: 1024px) and (orientation: portrait){
+    hr {
+        margin-bottom: 10px;
+    }
+    .section-aboutus .post-title {
+        display: block;
+    }
+    .section-aboutus .post-title p {
+        font-size: 1.5em;
+        margin-top: 10px;
+    }
+    .aboutus-left {
+        height: auto;
+    }
+    .cont-video {
+        margin: 50px auto;
+    }
+    .toTopArrow1 {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: portrait){
+    hr {
+        margin-bottom: 0;
+    }
+    .section-aboutus .post-title p {
+        font-size: 1.1em;
+    }
+    .gallery {
+        width: 0;
+        height: 0;
+        opacity: 0;
+    }
+    .toTopArrow1 {
+        margin-top: 350px;
+    }
+}
+
+
+// CELLPHONES
 @media screen and (max-width: 450px){
     .section-aboutus .post-title {
         height: auto;
@@ -176,90 +263,5 @@ video::-webkit-media-controls-fullscreen-button {
     .section-aboutus .post-title p {
         margin-top: 10px;
         font-size: 0.7em;
-    }
-}
-
-
-// iPADS
-@media screen and (max-width: 1024px) and (orientation: portrait){
-    hr {
-        margin-bottom: 10px;
-    }
-    .section-aboutus .post-title {
-        display: block;
-    }
-    .section-aboutus .post-title p {
-        font-size: 1.5em;
-        margin-top: 10px;
-    }
-    .aboutus-left {
-        height: auto;
-    }
-    .cont-video {
-        margin: 50px auto;
-    }
-    .toTopArrow1 {
-        margin-top: 300px;
-    }
-}
-
-@media screen and (max-width: 768px) and (orientation: portrait){
-    hr {
-        margin-bottom: 0;
-    }
-    .section-aboutus .post-title p {
-        font-size: 1.1em;
-    }
-    .gallery {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    .toTopArrow1 {
-        margin-top: 350px;
-    }
-}
-
-// NEST HUBS
-@media screen and (max-width: 1280px) and (orientation: landscape) {
-    .section-aboutus .post-title p {
-        font-size: 1.5rem;
-        margin-top: 20px;
-    }
-    .gallery div {
-        width: 180px;
-        height: 180px;
-    }
-    
-    .gallery div img {
-        width: 176px;
-        height: 176px;
-    }
-    .toTopArrow1 {
-        margin-top: 40px;
-    }
-}
-
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-    .section-aboutus .post-title p {
-        font-size: 0.8em;
-        margin-top: 5px;
-    }
-    .cont-video {
-        width: 496px;
-        height: 280px;
-        margin: 90px auto 0 auto;
-    }
-    .video {
-        width: 492px;
-        height: 276px;
-    }
-    .gallery {
-        width: 0;
-        height: 0;
-        opacity: 0;
-    }
-    .toTopArrow1 {
-        margin-top: 100px;
     }
 }

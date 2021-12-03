@@ -56,7 +56,6 @@ form {
 
 
 // Common properties
-
 input[type="text"],
 textarea,
 .contact-form button {
@@ -170,13 +169,55 @@ footer p {
 
 
 // MEDIA QUERIES
+// NEST HUBS
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+    .contact-form {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    .contact-form {
+        margin-top: 20px;
+    }
+    textarea {
+        height: 75px;
+    }
+    footer {
+        height: 25px;
+        line-height: 25px;
+    }
+}
+
+
+// iPADS
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    .contact-left {
+        width: 70%;
+    }
+    .section-contact .title-cont {
+        width: 100%;
+    }
+    .left-hr {
+        width: 100%;
+    }
+    hr {
+        width: 80%;
+    }
+    .contact-form {
+        width: 100%;
+    }
+  }
+
+
+// CELLPHONES
 @media screen and (max-width: 450px){
     .contact-left {
         width: 100%;
     }
     .contact-form {
         width: 95%;
-        margin: auto;
+        margin: 20px auto 0 auto;
     }
     .section-contact .title-cont {
         width: 100%;
@@ -201,7 +242,6 @@ footer p {
         height: 50px;
         line-height: 50px;
         background: linear-gradient(90deg, rgba(8,8,7,1) 0%, rgba(253,212,26,1) 70%, rgba(8,8,7,1) 100%);
-
     }
 }
 
@@ -213,45 +253,6 @@ footer p {
         margin-top: 10px;
     }
     textarea {
-        height: 110px;       
-    }
-}
-
-// iPADS
-@media screen and (max-width: 1024px) and (orientation: portrait) {
-    .contact-left {
-        width: 70%;
-    }
-    .section-contact .title-cont {
-        width: 100%;
-    }
-    .left-hr {
-        width: 100%;
-    }
-    hr {
-        width: 80%;
-    }
-    .contact-form {
-        width: 100%;
-    }
-  }
-  
-// NEST HUBS
-@media screen and (max-width: 1280px) and (orientation: landscape) {
-    .contact-form {
-        margin-top: 70px;
-    }
-}
-
-@media screen and (max-width: 1024px) and (orientation: landscape) {
-    .contact-form {
-        margin-top: 20px;
-    }
-    textarea {
-        height: 75px;
-    }
-    footer {
-        height: 25px;
-        line-height: 25px;
+        height: 110px;
     }
 }

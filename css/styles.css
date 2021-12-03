@@ -435,6 +435,9 @@ video::-webkit-media-controls-fullscreen-button {
     width: 176px;
     height: 176px;
   }
+  .toTopArrow1 {
+    margin-top: 40px;
+  }
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .section-aboutus .post-title p {
@@ -454,6 +457,9 @@ video::-webkit-media-controls-fullscreen-button {
     width: 0;
     height: 0;
     opacity: 0;
+  }
+  .toTopArrow1 {
+    margin-top: 100px;
   }
 }
 .section-contact {
@@ -666,6 +672,23 @@ footer p {
     width: 100%;
   }
 }
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .contact-form {
+    margin-top: 70px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .contact-form {
+    margin-top: 20px;
+  }
+  textarea {
+    height: 75px;
+  }
+  footer {
+    height: 25px;
+    line-height: 25px;
+  }
+}
 .section-main {
   background-size: cover;
   width: 100%;
@@ -866,6 +889,36 @@ footer p {
   .post-title .privacy-right p {
     font-size: 16px;
     margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1280px) and (orientation: landscape) {
+  .post-title .privacy-left div {
+    width: 300px;
+    height: 300px;
+    margin-top: 15px;
+  }
+  .post-title .privacy-left img {
+    width: 296px;
+    height: 296px;
+  }
+  .post-title .privacy-right p {
+    font-size: 26px;
+    margin-bottom: 55px;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  .post-title .privacy-left div {
+    width: 250px;
+    height: 250px;
+    margin-top: 15px;
+  }
+  .post-title .privacy-left img {
+    width: 246px;
+    height: 246px;
+  }
+  .post-title .privacy-right p {
+    font-size: 20px;
+    margin-bottom: 35px;
   }
 }
 .section-products {

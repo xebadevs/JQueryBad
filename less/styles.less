@@ -1,7 +1,17 @@
+@import url(mixins.less);
+@import url(nav.less);
+@import url(section_aboutus.less);
+@import url(section_contact.less);
+@import url(section_main.less);
+@import url(section_privacy.less);
+@import url(section_products.less);
+@import url(typography.less);
+@import url(variables.less);
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .fullpage {
@@ -25,16 +35,11 @@
     background-image: url(../img/main_bg.jpg);
   }
 
-@import url(mixins.less);
-@import url(nav.less);
-@import url(section_aboutus.less);
-@import url(section_contact.less);
-@import url(section_main.less);
-@import url(section_privacy.less);
-@import url(section_products.less);
-@import url(typography.less);
-@import url(variables.less);
 
+.post-title p {
+  color: @walterWhite;
+  font-size: 2rem;
+}
 
 // MEDIA QUERIES
 // iPADS

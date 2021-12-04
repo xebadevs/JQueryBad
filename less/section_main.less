@@ -6,6 +6,8 @@
 
 .main-question {
     font-size: 3em;
+    font-size: 4rem;
+    font-weight: bold;
     position: relative;
     top: 40%;
     left: 12%;
@@ -27,6 +29,25 @@
 }
 
 // CELLPHONES
+@media screen and (max-width: 450px) {
+    .main-question {
+        width: 220px;
+        font-size: 2.5rem;
+        position: absolute;
+        left: 3%;
+        top: 45%;
+    }
+    .post-title p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main-question {
+        font-size: 2.1rem;
+    }
+}
+
 @media screen and (max-width: 280px) {
     .textCenter {
         font-size: 27px;

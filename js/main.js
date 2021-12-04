@@ -1,19 +1,9 @@
 // ------------------------------ CONSTANTS ------------------------------ 
 
-const element_He = $('.element_He');
-const element_C = $('.element_C');
-const element_B = $('.element_B');
-const element_U = $('.element_U');
-const element_P = $('.element_P');
-const element_V = $('.element_V');
-const element_Ta = $('.element_Ta');
-
 const btn_aboutus = $('#btn_aboutus');
 const btn_products = $('#btn_products');
 const btn_privacy = $('#btn_privacy');
 const btn_contact = $('#btn_contact_bgc');
-
-const iframe = $('#iframe');
 
 const form_send = $('#form_send');
 
@@ -21,6 +11,8 @@ const section1 = $('#section1').attr('href').substring(1)
 const section2 = $('#section2').attr('href').substring(1)
 const section3 = $('#section3').attr('href').substring(1)
 const section4 = $('#section4').attr('href').substring(1)
+
+let originalWidth = window.innerWidth
 
 
 // ------------------------------  FUNCTIONS ------------------------------
@@ -172,8 +164,27 @@ $('#form_send').on('click', function(e){
 })
 
 
-// MEDIAQUERIES
-
-if($(window).width() > 1100){
-    $('#fullpage').fullpage()
+// A constant listener from the width dimensions
+function wheelStyle(){
+    if($(window).width() > 1100){
+        $('#fullpage').fullpage()
+        setTimeout(function(){
+            wheelStyle()
+            }, 3000)
+    }
+    else{
+        checkWindowWidth()
+    }
 }
+
+// If the user changes the window dimensions, the site reloads to adjust the wheel configuration
+function checkWindowWidth(){
+        if(window.innerWidth != originalWidth){
+            location.reload()
+        }
+}
+
+
+// ------------------------------  ON LOAD ------------------------------
+window.onload = wheelStyle()
+window.onload = checkWindowWidth()

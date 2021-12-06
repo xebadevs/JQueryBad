@@ -18,8 +18,25 @@ But, then, a form contact for who? And this amazing serie comes to my mind. From
 
 ## Build with
 
-- **JQuery**
-- **FullPage.js** for fullscreen scrolling
-- **Less** for CSS compilation
-- **Balloon.css**: CSS library for tooltips
-- Contact form validations
+- `JQuery`.
+- `FullPage.js` for fullscreen scrolling.
+- `*Less` for CSS compilation.
+- `*Balloon.css` for tooltips (CSS Library).
+- `Validate` for form validation (Jquery Plugin).
+
+
+## Try it on GitHub Pages
+
+- https://xebadevs.github.io/JQueryBad/
+
+
+## Local Use
+
+Just clone the repository or download it to your hard drive and run `index.html`.
+
+**I hope you like the result!**
+
+
+## License
+
+Distributed under Creative Commons Legal Code. See `LICENSE.txt` for more information.

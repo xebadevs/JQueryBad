@@ -164,27 +164,25 @@ $('#form_send').on('click', function(e){
 })
 
 
-// A constant listener from the width dimensions
-function wheelStyle(){
-    if($(window).width() > 1100){
-        $('#fullpage').fullpage()
-        setTimeout(function(){
-            wheelStyle()
-            }, 3000)
-    }
-    else{
-        checkWindowWidth()
-    }
-}
+// Full page library activation
+if($(window).width() > 1100){
+            $('#fullpage').fullpage()
+        }
+        else{
+            checkWindowWidth()
+        }
+
 
 // If the user changes the window dimensions, the site reloads to adjust the wheel configuration
 function checkWindowWidth(){
         if(window.innerWidth != originalWidth){
             location.reload()
         }
+        setTimeout(function(){
+            checkWindowWidth()
+        }, 1500)
 }
 
 
 // ------------------------------  ON LOAD ------------------------------
-window.onload = wheelStyle()
 window.onload = checkWindowWidth()

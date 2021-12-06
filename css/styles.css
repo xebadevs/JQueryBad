@@ -679,6 +679,7 @@ footer p {
   position: relative;
   top: 40%;
   left: 12%;
+  color: #000002;
 }
 @media screen and (max-width: 1024px) and (orientation: landscape) {
   .main-question {

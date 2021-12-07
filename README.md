@@ -35,7 +35,7 @@ I search for the color palette to start with the design, wich I did again in Fig
 
 Then, some possible background images, till I found the aproppiate ones. Also a blue tone that match with the images in *Products*.
 
-I edited a fragment of the chapter 19 of Season 2 for *About us* section video, showing the elaboration of the product.
+I edited a fragment of the chapter 19 of Season 2 for *About us* section video, showing the elaboration of the product, including the main theme from the TV show.
 
 It was also a good idea to include some common pattern for the different sections, for which I chose the sexagons.
 

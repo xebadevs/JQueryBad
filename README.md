@@ -65,13 +65,22 @@ PC Monitor and Tablet - *Main and Contact sections*
 <br>
 
 
-## Build with
+## Build With
 
 - `JQuery` for all the JavaScript side.
 - `FullPage.js` for fullscreen scrolling.
 - `Validate` for form validation (Jquery Plugin).
 - `Less` for CSS compilation.
 - `Balloon.css` for tooltips (CSS Library), on chemical elements.
+
+<br>
+
+
+## Technical Comments
+
+The extensive use of `media queries` is due to their practice itself: sometimes quick solutions are required and it seemed like a good opportunity to put them into practice, before applying the most current responsive methods.
+
+You may have a problem related to the `Scroll` if you use `Mozilla Firefox` (at least in the current versions at the time of making the project).
 
 <br>
 

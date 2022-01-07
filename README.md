@@ -46,19 +46,19 @@ In the landscape viewports, at the end, appears Heisenberg again, closing the ci
 
 ## Preview
 
-SmartPhones - *All sections*
+*All sections*
 
 ![portfolio-cell](https://user-images.githubusercontent.com/91569646/144885989-a8899a7a-844b-448d-9c1c-e7f90f86aac9.jpg)
 
 <br>
 
-Notebook and iPad - *Products and Contact sections*
+*Products and Contact sections*
 
 ![portfolio-img1](https://user-images.githubusercontent.com/91569646/144896994-bc12f7ca-be9b-4d7a-a209-60d1196b9065.jpg)
 
 <br>
 
-PC Monitor and Tablet - *Main and Contact sections*
+*Main and Contact sections*
 
 ![portfolio-img2](https://user-images.githubusercontent.com/91569646/144905539-22b8a087-b1db-4b49-a745-de42412b6a98.jpg)
 

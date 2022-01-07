@@ -75,6 +75,12 @@ In the landscape viewports, at the end, appears Heisenberg again, closing the ci
 
 <br>
 
+Extra Tools:
+- `Figma`.
+- `Photoshop`.
+
+<br>
+
 
 ## Technical Comments
 

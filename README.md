@@ -78,6 +78,7 @@ In the landscape viewports, at the end, appears Heisenberg again, closing the ci
 Extra Tools:
 - `Figma`.
 - `Photoshop`.
+- `Corel`.
 
 <br>
 

@@ -2,7 +2,15 @@
 
 ![Jquery Bad 2](https://user-images.githubusercontent.com/91569646/141221266-c49aafa4-4f55-4eda-85ec-b9117614f841.jpg)
 
+## Try it on GitHub Pages
+
+> https://xebadevs.github.io/JQueryBad/
+
 <br>
+
+
+
+# About JQueryBad ⚗
 
 
 ## Is JQuery still alive?
@@ -16,6 +24,7 @@ So, as we can see, it's not that easy to dismiss it. *Ergo*, it seems convenient
 <br>
 
 
+
 ## Inspiration
 
 I want to include in this case a contact form, because their importance about client interaction, validations and for being such a common and useful section. And use **JQuery** to do that.
@@ -25,6 +34,7 @@ But, then, a form contact for who? And this amazing serie comes to my mind: **Br
 *Mission: to know about Heisenberg and her brand, products, privacity* (for the kind of products, of course) *and to contact him through a web form.*
 
 <br>
+
 
 
 ## Quick Walkthrough
@@ -42,6 +52,7 @@ It was also a good idea to include some common pattern for the different section
 In the landscape viewports, at the end, appears Heisenberg again, closing the circle of the design.
 
 <br>
+
 
 
 ## Preview
@@ -65,6 +76,7 @@ In the landscape viewports, at the end, appears Heisenberg again, closing the ci
 <br>
 
 
+
 ## Build With
 
 - `JQuery` for all the JavaScript side.
@@ -83,6 +95,7 @@ Extra Tools:
 <br>
 
 
+
 ## Technical Comments
 
 The extensive use of `media queries` is due to their practice itself: sometimes quick solutions are required and it seemed like a good opportunity to put them into practice, before applying the most current responsive methods.
@@ -92,11 +105,6 @@ You may have a problem related to the `Scroll` if you use `Mozilla Firefox` (at 
 <br>
 
 
-## Try it on GitHub Pages
-
-- https://xebadevs.github.io/JQueryBad/
-
-<br>
 
 
 ## Local Use
@@ -106,6 +114,7 @@ Just clone the repository or download it to your hard drive and run `index.html`
 **And ask for some crystals! xD**
 
 <br>
+
 
 
 ## License

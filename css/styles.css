@@ -558,6 +558,10 @@ footer p {
   font-weight: bold;
   font-family: 'Saira', sans-serif;
 }
+footer a {
+  color: #000002;
+  text-decoration: none;
+}
 .received {
   font-family: 'Saira', sans-serif;
   color: #369457;
